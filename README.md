@@ -4,7 +4,7 @@
 I recently bought this ESP32-C3 board with a round LCD TFT display and struggled for a while to start programming it with Arduino. I'm documenting the steps to get the demo app compiled and uploaded here, to save the other happy owners some time.   
 
 
-![theBoard](theBoard.png)
+![theBoard](theBoard.jpg)
 
 
 ## Version of Arduino
