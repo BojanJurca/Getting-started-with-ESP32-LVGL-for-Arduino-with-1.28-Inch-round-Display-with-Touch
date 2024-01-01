@@ -14,9 +14,7 @@ I recently bought this ESP32-C3 board with a round LCD TFT display and struggled
 
 ## Demo examples
 
-2. Download and expand demo examples
-
-[http://pan.jczn1688.com/directlink/1/ESP32%20module/1.28inch_ESP32-2424S012.zip](http://pan.jczn1688.com/directlink/1/ESP32%20module/1.28inch_ESP32-2424S012.zip)
+2. Download and expand demo examples: [http://pan.jczn1688.com/directlink/1/ESP32%20module/1.28inch_ESP32-2424S012.zip](http://pan.jczn1688.com/directlink/1/ESP32%20module/1.28inch_ESP32-2424S012.zip)
 
 3. Open directory 1.28inch_ESP32-2424S012 (1)\1.28inch_ESP32-2424S012\1-Demo\Demo_Arduino\1_1_Factory_samples\Factory_samples
 
