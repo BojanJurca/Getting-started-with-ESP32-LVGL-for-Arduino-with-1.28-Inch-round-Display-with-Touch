@@ -42,8 +42,7 @@ I recently bought this ESP32-C3 board with a round LCD TFT display and struggled
 by removing definition #define LV_USE_FS_FATFS 1 in .../Arduino/libraries/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c
 
 
-## lv_demos.h
-
+## lv_demos.h, lv_demo_widgets.h, lv_demo_widgets.c, lv_demo_benchmark.h  
 
 10. Create a subdirectory demos, find lv_demos.h file among the downloaded examples and copy it into demos directory
 
