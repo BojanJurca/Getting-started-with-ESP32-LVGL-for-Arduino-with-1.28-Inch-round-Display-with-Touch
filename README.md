@@ -45,7 +45,11 @@ by removing definition #define LV_USE_FS_FATFS 1 in .../Arduino/libraries/lvgl/s
 ## lv_demos.h
 
 
-Create a subdirectory demos, find lv_demos.h file among the downloaded examples and copy it into demos directory
+10. Create a subdirectory demos, find lv_demos.h file among the downloaded examples and copy it into demos directory
+
+11. Create a subdirectory demos\widgets, find lv_demo_widgets.h and lv_demo_widgets.c files among the downloaded examples and copy them into demos\widgets directory
+
+12. Create a subdirectory demos\benchmark, find lv_demo_benchmark.h file among the downloaded examples and copy it into demos\benchmark directory
 
 
 ## Compile and upload the sketch
