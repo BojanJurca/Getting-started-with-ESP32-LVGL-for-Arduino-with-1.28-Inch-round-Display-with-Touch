@@ -1,63 +1,3 @@
-# Getting started with ESP32 LVGL for Arduino Development Board 1.28 Inch 240*240 IPS Smart Display Screen LCD TFT Module WiFi & Bluetooth with Touch
-
-
-I recently bought this ESP32-C3 board with a round LCD TFT display and struggled for a while to start programming it with Arduino. I'm documenting the steps to get the demo app compiled and uploaded here, to save the other happy owners some time.   
-
-
-![theBoard](theBoard.jpg)
-
-
-## Version of Arduino
-
-1. Use Arduino 2.2.1
-
-
-## Demo factory samples
-
-2. Download and expand demo examples: [http://pan.jczn1688.com/directlink/1/ESP32%20module/1.28inch_ESP32-2424S012.zip](http://pan.jczn1688.com/directlink/1/ESP32%20module/1.28inch_ESP32-2424S012.zip)
-
-3. Open directory 1.28inch_ESP32-2424S012 (1)\1.28inch_ESP32-2424S012\1-Demo\Demo_Arduino\1_1_Factory_samples\Factory_samples
-
-4. Open Factory_samples.ino sketch
-
-
-## Board and Partition scheme 
-
-5. Select Adafruit QT Py ESP32-C3 board 
-
-6. Select Huge APP partition scheme
-
-
-
-## Libraries
-
-8. Install LovyanGFX library
-
-
-
-## Fix the lvgl bug
-
-9. Fix lvgl library bug: [https://github.com/lvgl/lvgl/issues/3851](https://github.com/lvgl/lvgl/issues/3851)
-
-by removing definition #define LV_USE_FS_FATFS 1 in .../Arduino/libraries/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c
-
-
-## lv_demos.h, lv_demo_widgets.h, lv_demo_widgets.c, lv_demo_benchmark.h  
-
-10. Create a subdirectory demos, find lv_demos.h file among the downloaded examples and copy it into demos directory
-
-11. Create a subdirectory demos\widgets, find lv_demo_widgets.h and lv_demo_widgets.c files among the downloaded examples and copy them into demos\widgets directory
-
-12. Create a subdirectory demos\benchmark, find lv_demo_benchmark.h file among the downloaded examples and copy it into demos\benchmark directory
-
-
-## Compile and upload the sketch
-
-
-## gettingStarted.ino
-
-
-```C++
 /*
 
     A working example combined from many different sources, like:
@@ -129,7 +69,7 @@ class LGFX : public lgfx::LGFX_Device {
                 cfg.pin_rst = -1; // Pin number to which RST is connected (-1 = disable)
                 cfg.pin_busy = -1; // Pin number to which BUSY is connected (-1 = disable)
 
-                // * The following setting values ??are general initial values ??set for each panel and the pin number to which BUSY is connected (-1 = disable), so please comment out any unknown items and try again.
+                // * The following setting values â€‹â€‹are general initial values â€‹â€‹set for each panel and the pin number to which BUSY is connected (-1 = disable), so please comment out any unknown items and try again.
                 cfg.memory_width = 240; // Maximum width supported by the driver IC
                 cfg.memory_height = 240; // Maximum height supported by the driver IC
                 cfg.panel_width = 240; // Actual displayable width
@@ -438,11 +378,3 @@ void loop () {
   lv_timer_handler (); // let the GUI do its work
   delay (5);
 }
-
-```
-
-
-
-
-
-
